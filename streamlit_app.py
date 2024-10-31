@@ -60,7 +60,7 @@ if st.button("Klasifikasikan"):
 
         # Melakukan prediksi
         prediction = model.predict(text_tfidf)
-        predicted_category = "Olahraga" if prediction [0] ==  "Olahraga" else "Otomotif"
+        predicted_category = "Otomotif" if prediction [0] ==  "Otomotif" else "Olahraga"
 
         # Menampilkan hasil prediksi
         st.write(f"Hasil Klasifikasi: *{predicted_category}*")
